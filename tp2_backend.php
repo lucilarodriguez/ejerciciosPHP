@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Validar que sea un número positivo</h1>
+<h3>Validar que sea un número positivo</h3>
     <?php
     echo "Inicio del programa <br>";
 
@@ -19,7 +19,8 @@
     echo "<br> Fin del programa ";
 
     ?>
-    <h2>Validar que sea un número mayor a 1 y menor a 10</h2>
+
+<h3>Validar que sea un número mayor a 1 y menor a 10</h3>
     <?php
     echo "Inicio del programa <br>";
 
@@ -35,7 +36,7 @@
 
     ?>
 
-<h2>Validar que sea un número mayor a 10 o menor a 2</h2>
+<h3>Validar que sea un número mayor a 10 o menor a 2</h3>
     <?php
     echo "Inicio del programa <br>";
 
@@ -44,19 +45,19 @@
     if ($n> 10 || $n<2) {
         echo "$n es mayor a a 10 y menor a 2";
     } else {
-        echo "$n No es mayor a a 1 y menor a 10";
+        echo "$n NO es mayor a 10 ni menor a 2";
     }
 
     echo "<br> Fin del programa ";
 
     ?>
 
-<h2>Validar dos variables + operaciones</h2>
+<h3>Validar dos variables + operaciones</h3>
     <?php
     echo "Inicio del programa <br>";
 
     $n1=10;
-    $n2=1;
+    $n2=10;
 
     if ($n1>$n2) {
         echo "$n1 + $n2 = " . $n1 + $n2 . " <br>";
