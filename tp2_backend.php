@@ -7,49 +7,66 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>IF</h1>
+    <h1>Validar que sea un número positivo</h1>
     <?php
     echo "Inicio del programa <br>";
 
-    $a=10;
-    $b=5;
+    $n=10;
 
-    if ($a>$b) {
-        echo "$a es mayor a $b";
+    if ($n>0) {
+        echo "$n es un numero positivo";
     }
     echo "<br> Fin del programa ";
 
     ?>
-    <h2>ELSE</h2>
+    <h2>Validar que sea un número mayor a 1 y menor a 10</h2>
     <?php
     echo "Inicio del programa <br>";
 
-    $a=10;
-    $b=50;
+    $n=5;
 
-    if ($a>$b) {
-        echo "$a es mayor a $b";
+    if ($n> 1 && $n<10) {
+        echo "$n es mayor a a 1 y menor a 10";
     } else {
-        echo "$a No es mayor a $b";
+        echo "$n No es mayor a a 1 y menor a 10";
     }
 
     echo "<br> Fin del programa ";
 
     ?>
 
-<h2>ELSEIF</h2>
+<h2>Validar que sea un número mayor a 10 o menor a 2</h2>
     <?php
     echo "Inicio del programa <br>";
 
-    $a=10;
-    $b=10;
+    $n=5;
 
-    if ($a>$b) {
-        echo "$a es mayor a $b";
-    } elseif ($a == $b) {
-        echo "$a es igual a $b";
+    if ($n> 10 || $n<2) {
+        echo "$n es mayor a a 10 y menor a 2";
     } else {
-        echo "$a no es mayor a $b";
+        echo "$n No es mayor a a 1 y menor a 10";
+    }
+
+    echo "<br> Fin del programa ";
+
+    ?>
+
+<h2>Validar dos variables + operaciones</h2>
+    <?php
+    echo "Inicio del programa <br>";
+
+    $n1=10;
+    $n2=1;
+
+    if ($n1>$n2) {
+        echo "$n1 + $n2 = " . $n1 + $n2 . " <br>";
+        echo "$n1 - $n2 = " . $n1 - $n2 . " <br>";
+
+    } elseif ($n1 < $n2) {
+        echo "$n1 * $n2 = " . $n1 * $n2 . " <br>";
+        echo "$n1 / $n2 = " . $n1 / $n2 . " <br>";
+    } else {
+        echo "Los números ingresados son iguales";
     }
 
     echo "<br> Fin del programa ";
