@@ -7,7 +7,7 @@ $bbdd= [
 ];
 if ($bbdd['user'] == $user && $bbdd['pass']== $pass ) {
     print ('Ingreso correcto');
-    header('Location: main.php');
+    header('Location: index.html');
 
 }elseif ($bbdd['user'] != $user) {
     print ('Error! Usuario incorrecto');
