@@ -1,0 +1,20 @@
+{
+    "name": "lurodriguezalfaro/tienda-online",
+    "description": "creacion de una tienda online",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucila Rodriguez Alfaro",
+            "email": "lurodriguezalfaro@gmail.com"
+        }
+    ],
+    "require": {
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "lurodriguezalfaro\\":"src/"
+        }
+    }
+}
