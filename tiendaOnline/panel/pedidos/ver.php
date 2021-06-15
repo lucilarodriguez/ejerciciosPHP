@@ -166,18 +166,15 @@ if(!isset($_SESSION['usuario_info']) OR empty($_SESSION['usuario_info']))
           </div>
         </div>
     </div> <!-- /container -->
-    <footer class="footer container-fluid bg-primary">
+    <footer class="footer container-fluid bg-primary text-center">
       <div class="col-md-6">
         <p> <span class="glyphicon glyphicon-copyright-mark"></span> Realizado por: <a href="http://linkedin.com/in/lurodriguezalfaro" target="_blank">Lucila Rodriguez Alfaro</a></p>
       </div>
-      <div class="col-md-6">
-        <div class="row">
-        <ul class="list-inline text-right">
-          <li><a href="https://www.facebook.com/elmistolmuebleria" target="_blank"><span class="glyphicon glyphicon-thumbs-up"></span> Facebook</a></li>
-          <li><a href="https://www.instragram.com/elmistolmuebleria" target="_blank"><span class="glyphicon glyphicon-heart-empty"></span> Instagram</a></li>
+      <div class="col-md-6 text-center">
+        <ul class="list-inline">
+        <li><a href="../../index.php" target="_blank"><span class="glyphicon glyphicon-home"></span> Tienda</a></li>
           <li><a href="https://wa.me/542613620148" target="_blank"><span class="glyphicon glyphicon-comment"></span> WhatsApp</a></li>
         </ul>
-      </div>
     </footer>
 
     <!-- Bootstrap core JavaScript

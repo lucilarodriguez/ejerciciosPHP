@@ -57,8 +57,7 @@ if(!isset($_SESSION['usuario_info']) OR empty($_SESSION['usuario_info']))
       </div>
     </nav>
 
-    <div class="container" id="main">  
-    <div class="row">
+    <div class="container-fluid" id="main">  
           <div class="col-md-12">
             <fieldset>
             <legend>Listado de pedidos</legend>
@@ -116,20 +115,15 @@ if(!isset($_SESSION['usuario_info']) OR empty($_SESSION['usuario_info']))
               </table>
             </fieldset>
           </div>
-    </div>
     </div> <!-- /container -->
     <footer class="footer container-fluid bg-primary">
-      <div class="col-md-6">
+      <div class="col-md-6 text-center">
         <p> <span class="glyphicon glyphicon-copyright-mark"></span> Realizado por: <a href="http://linkedin.com/in/lurodriguezalfaro" target="_blank">Lucila Rodriguez Alfaro</a></p>
       </div>
-      <div class="col-md-6">
-        <div class="row">
-        <ul class="list-inline text-right">
-          <li><a href="https://www.facebook.com/elmistolmuebleria" target="_blank"><span class="glyphicon glyphicon-thumbs-up"></span> Facebook</a></li>
-          <li><a href="https://www.instragram.com/elmistolmuebleria" target="_blank"><span class="glyphicon glyphicon-heart-empty"></span> Instagram</a></li>
-          <li><a href="https://wa.me/542613620148" target="_blank"><span class="glyphicon glyphicon-comment"></span> WhatsApp</a></li>
+      <div class="col-md-6 text-center">
+        <ul class="list-inline ">
+          <li><a href="../index.php" target="_blank"><span class="glyphicon glyphicon-home"></span> Tienda</a></li>
         </ul>
-      </div>
     </footer>
 
     <!-- Bootstrap core JavaScript
