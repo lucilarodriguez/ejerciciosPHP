@@ -1,6 +1,9 @@
+
 <?php
 
 session_start();
+ 
+
 
 if($_SERVER['REQUEST_METHOD'] ==='POST'){
 
@@ -39,26 +42,37 @@ if($_SERVER['REQUEST_METHOD'] ==='POST'){
             );
 
             $pedido->registrarDetalle($_params);
-            
+           
+        $_SESSION['carrito'] = array();
+
         }
 
+    }
+
+    
   
         
-        //$str = implode(',',$_params);
+        // //$str = implode(',',$_params);
         $ttl = $value['cantidad']*$value['precio'];
 
-        if (isset($_POST['submit'])) {
+         if (isset($_POST['submit'])) {
 
             $nombre = $_POST['nombre'];
-            $apellidos = $_POST['apellidos'];
-            $n_wa = $_POST['n_wa'];
-            $carrito = $pedido_id;
-            $total= $ttl;
-            //$p = $str;
+             $apellidos = $_POST['apellidos'];
+             $n_wa = $_POST['n_wa'];
+             $carrito = $pedido_id;
+             $total= $ttl;
+             //$p = $str;
+
+             //header("location:https://api.whatsapp.com/send?phone=$n_wa&text=Hola%20soy%20$nombre%20$apellidos.%20%0DHice%20el%20pedido%20número%20$carrito%20por:%20$$total");
+            echo "<script> location.href ='https://api.whatsapp.com/send?phone=$n_wa&text=Hola%20soy%20$nombre%20$apellidos.%20%0DHice%20el%20pedido%20número%20$carrito%20por:%20$$total'; </script>";
+
+            // header( 'Location:gracias.php');
+            // echo "<script>  location.href = 'gracias.php'; </script>";
+
+            // echo "<script>window.open('https://api.whatsapp.com', '_blank'); </script>";
             
-            header("location:https://api.whatsapp.com/send?phone=$n_wa&text=Hola%20soy%20$nombre%20$apellidos.%20%0DHice%20el%20pedido%20número%20$carrito%20por:%20$$total");
-            
-        }else {
+         }else {
 
             
             echo "
@@ -66,10 +80,7 @@ if($_SERVER['REQUEST_METHOD'] ==='POST'){
                     window.location=history.go(-1);
                 </script>
             ";
-        }
-
-        $_SESSION['carrito'] = array();
-    }
+         }
 
 
 }

@@ -140,7 +140,7 @@ if(!isset($_SESSION['usuario_info']) OR empty($_SESSION['usuario_info']))
         </div>
 
     </div> <!-- /container -->
-    <footer class="footer container-fluid bg-primary text-center navbar-fixed-bottom">
+    <footer class="footer container-fluid bg-primary text-center">
       <div class="col-md-6">
         <p> <span class="glyphicon glyphicon-copyright-mark"></span> Realizado por: <a href="http://linkedin.com/in/lurodriguezalfaro" target="_blank">Lucila Rodriguez Alfaro</a></p>
       </div>

@@ -14,7 +14,7 @@ function actualizarArticulo($id,$cantidad = FALSE){
     if($cantidad)
         $_SESSION['carrito'][$id]['cantidad'] = $cantidad;
     else
-        $_SESSION['carrito'][$id]['cantidad']+=1;
+        $_SESSION['carrito'][$id]['cantidad']=1;
 }
 
 function calcularTotal(){

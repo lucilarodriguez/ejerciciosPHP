@@ -81,7 +81,7 @@ if(isset($_GET['id']) && is_numeric($_GET['id'])){
       <table class="table  table-bordered table-hover">
         <thead>
           <tr>
-            <th>#</th>
+
             <th>Artículo</th>
             <th>Foto</th>
             <th>Precio</th>
@@ -100,7 +100,7 @@ if(isset($_GET['id']) && is_numeric($_GET['id'])){
 
             <tr>
               <form action="actualizar_carrito.php" method="post">
-              <td><?php print $c ?></td>
+    
                 <td><?php print $value['titulo'] ?></td>
                 <td>
                   <?php

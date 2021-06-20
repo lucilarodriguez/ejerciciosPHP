@@ -73,8 +73,7 @@
                                     <textarea name="comentario" class="form-control" rows="4" placeholder="Podés agregar aca algún comentario adicional sobre tu pedido"></textarea>
                                 </div>  <!-- /Comentario -->
                                 <input type="hidden" name="n_wa" value="542613620148">
-                                <button type="submit" name="submit" class="btn btn-primary btn-block">Enviar pedido por WhatsApp</button>
-                                
+                                <button onclick="cargarGracias()" type="submit" name="submit" class="btn btn-primary btn-block">Enviar pedido por WhatsApp</button>
                             </form>
                     </fieldset>
                 </div>
@@ -99,6 +98,11 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+      function cargarGracias() {
+        setTimeout(function(){location.href = "gracias.php"}, 1000);
+      }
+    </script>
 
   </body>
 </html>

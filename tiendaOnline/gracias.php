@@ -1,6 +1,7 @@
 <?php
    session_start();
    require 'funciones.php';
+   
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -52,17 +53,15 @@
       </div>
     </div> <!-- /container -->
     <footer class="footer container-fluid bg-primary navbar-fixed-bottom">
-      <div class="col-md-6">
+      <div class="col-md-6 text-center">
         <p> <span class="glyphicon glyphicon-copyright-mark"></span> Realizado por: <a href="http://linkedin.com/in/lurodriguezalfaro" target="_blank">Lucila Rodriguez Alfaro</a></p>
       </div>
-      <div class="col-md-6">
-        <div class="row">
-        <ul class="list-inline text-right">
+      <div class="col-md-6 text-center">
+        <ul class="list-inline">
           <li><a href="https://www.facebook.com/elmistolmuebleria" target="_blank"><span class="glyphicon glyphicon-thumbs-up"></span> Facebook</a></li>
-          <li><a href="https://www.instragram.com/elmistolmuebleria" target="_blank"><span class="glyphicon glyphicon-heart-empty"></span> Instagram</a></li>
           <li><a href="https://wa.me/542613620148" target="_blank"><span class="glyphicon glyphicon-comment"></span> WhatsApp</a></li>
+          <li><a href="panel/index.php" target="_blank"><span class="glyphicon glyphicon-cog"></span> Panel</a></li>
         </ul>
-      </div>
     </footer>
 
     <!-- Bootstrap core JavaScript
@@ -70,6 +69,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-
+    
   </body>
 </html>
